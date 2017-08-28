@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway:400,600');
+@import './colors.scss';
+
+$heading-font: 'Raleway', sans-serif;
+$text-font: 'Lato', sans-serif;
+
+body {
+  background: $bg-body;
+  font-size: 16px;
+  font-family: $text-font;
+  color: $text-color;
+}
+
+h1, h2, h4 {
+  font-family: $heading-font;
+}
+
+.app {
+  padding: 5rem;
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    color: $biege;
+    text-shadow: 1px 1px 1px $biege-light;
+  }
+  h2 {
+    font-weight: 600;
+  }
+}
+
+.card {
+  min-height: 340px;
+  padding: 10px;
+  border: 1px solid $border-color-card;
+  border-radius: 3px;
+  margin: 15px 0;
+  background-color: $bg-card;
+  box-shadow: 1px 1px 2px $translucent-black, -1px -1px 2px $translucent-black;
+  transition: 0.4s;
+  &:hover {
+    box-shadow: 4px 4px 10px $translucent-black, -4px -4px 10px $translucent-black;
+  }
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
+  .card-img {
+    height: 123px;
+    overflow: hidden;
+    @media screen and (max-width: 768px) {
+      height: auto;
+    }
+  }
+  h4 a {
+    color: $biege-light;
+    transition: 0.4s;
+    &:hover {
+      color: $biege;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+  }
+}
