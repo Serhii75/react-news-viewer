@@ -17,9 +17,9 @@ class Articles extends React.Component {
                 <div className="card-img">
                   <img src={article.urlToImage} className="img-responsive card-img-top" />
                 </div>
-                <div className="card-body">
-                  <h4 className="card-title"><a href={article.url} target="_blank">{article.title}</a></h4>
-                  <p className="card-text">{this.truncate(article.description, 100)}</p>
+                <div>
+                  <h4><a href={article.url} target="_blank">{article.title}</a></h4>
+                  <p>{this.truncate(article.description, 100)}</p>
                 </div>
               </div>
             </div>

@@ -12,7 +12,7 @@ const SOURCES = [
 
 const BASE_URL = 'https://newsapi.org/v1/articles';
 // Here should be your https://newsapi.org/ API Key
-const API_KEY = 'YOUR_API_KEY';
+const API_KEY = '332d00016ea64d3d938c0c7a70590da6';
 
 class App extends React.Component {
   constructor(props) {
