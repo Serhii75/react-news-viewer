@@ -41,7 +41,6 @@ class App extends React.Component {
         newsName: SOURCES[num].name,
         articles
       });
-      console.log('this.state', this.state);
     });
   }
 

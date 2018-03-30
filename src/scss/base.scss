@@ -17,6 +17,9 @@ h1, h2, h4 {
 
 .app {
   padding: 5rem;
+  @media screen and (max-width: 768px) {
+    padding: 2rem;
+  }
   h1 {
     text-align: center;
     margin-bottom: 30px;
@@ -30,8 +33,9 @@ h1, h2, h4 {
 }
 
 .card {
-  min-height: 340px;
+  height: 95%;
   padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid $border-color-card;
   border-radius: 3px;
   margin: 15px 0;
@@ -45,19 +49,22 @@ h1, h2, h4 {
     height: auto;
   }
   .card-img {
-    height: 123px;
+    height: 200px;
     overflow: hidden;
     @media screen and (max-width: 768px) {
       height: auto;
     }
   }
-  h4 a {
-    color: $biege-light;
-    transition: 0.4s;
-    &:hover {
-      color: $biege;
-      text-decoration: none;
-      transition: 0.2s;
+  h4 {
+    margin-top: 10px;
+    a {
+      color: $biege-light;
+      transition: 0.4s;
+      &:hover {
+        color: $biege;
+        text-decoration: none;
+        transition: 0.2s;
+      }
     }
   }
 }
